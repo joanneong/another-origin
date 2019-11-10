@@ -1,5 +1,5 @@
 {
-  "name": "blink-sop-cves",
+  "name": "another-origin",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joanneong/blink-sop-cves.git"
+    "url": "git+https://github.com/joanneong/another-origin.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joanneong/blink-sop-cves/issues"
+    "url": "https://github.com/joanneong/another-origin/issues"
   },
-  "homepage": "https://github.com/joanneong/blink-sop-cves#readme",
+  "homepage": "https://github.com/joanneong/another-origin#readme",
   "dependencies": {
     "express": "^4.17.1",
     "path": "^0.12.7"

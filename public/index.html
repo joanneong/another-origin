@@ -1,3 +1,15 @@
-<button onclick="location.search=Math.random()">Reload</button>
-<img src="./rgb.png" style="width:300px;height:100px;image-rendering:pixelated">
-<iframe src="//another-origin-herokuapp.com" style="width:500px;height:500px"></iframe>
+<canvas id="canvas"></canvas>
+<div id="data"></div>
+<script>
+var data = document.getElementById('data');
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+var img = new Image();
+img.src = '//vulnerabledoma.in/rgb.png';
+img.onload=function(){
+    ctx.drawImage(img, 0, 0);
+    data.innerHTML+='ctx.getImageData(0,0,1,1).data: ' + ctx.getImageData(0,0,1,1).data + '<br />';//red
+    data.innerHTML+='ctx.getImageData(1,0,1,1).data: ' + ctx.getImageData(1,0,1,1).data + '<br />';//green
+    data.innerHTML+='ctx.getImageData(2,0,1,1).data: ' + ctx.getImageData(2,0,1,1).data;//blue
+}
+</script>
