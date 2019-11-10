@@ -1,16 +1,6 @@
-<canvas id="canvas"></canvas>
-<div id="data"></div>
-<script>
-var data = document.getElementById('data');
-var canvas = document.getElementById('canvas');
-var ctx = canvas.getContext('2d');
-var img = new Image();
-img.crossOrigin = "Anonymous";
-img.src = '//blink-sop-cves.herokuapp.com/rgb.png';
-img.onload=function(){
-    ctx.drawImage(img, 0, 0);
-    data.innerHTML+='ctx.getImageData(0,0,1,1).data: ' + ctx.getImageData(0,0,1,1).data + '<br />';//red
-    data.innerHTML+='ctx.getImageData(1,0,1,1).data: ' + ctx.getImageData(1,0,1,1).data + '<br />';//green
-    data.innerHTML+='ctx.getImageData(2,0,1,1).data: ' + ctx.getImageData(2,0,1,1).data;//blue
-}
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="cross-origin.css">
+</head>
+</html>
